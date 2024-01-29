@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/small_index.css">
     <title>Temperature Converter</title>
 </head>
+
 <body>
-    
+    <div class="container flex-center">
+        <div class="main-header">
+            <h1>Temperature Converter</h1>
+        </div>
+        <div class="main-form">
+            <form id="myForm">
+                <label for="temp_input">Temperature</label>
+                <input type="text" name="temperature" id="temp_input" placeholder="Enter Temperature" \n>
+                <label for="unit">Unit</label>
+                <select name="unit" id="unit">
+                    <option value="none">Select a Unit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="output">
+            <p></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
